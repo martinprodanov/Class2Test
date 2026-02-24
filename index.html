@@ -2,22 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures the layout scales properly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Google Fonts: preconnect speeds up font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter typeface — weights: 400 (regular), 500 (medium), 600 (semi), 700 (bold) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet for all visual styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Floating label at top-center of the page (indicates this is the HTML version) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- ======================== -->
+    <!-- PRICING CARDS CONTAINER  -->
+    <!-- Holds all plan cards in a horizontal row -->
+    <!-- ======================== -->
     <div class="cards-container">
+
+        <!-- ===== HOBBY (FREE) CARD ===== -->
         <div class="card">
+            <!-- card-top: groups title, price, and features so the button stays at the bottom -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
+
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +54,21 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Secondary style button (light background) -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- ===== PRO ($20/MO) CARD ===== -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
+
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,8 +91,11 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Primary style button (dark background, white text) -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
     </div>
 </body>
 </html>
