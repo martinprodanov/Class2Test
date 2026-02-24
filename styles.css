@@ -178,7 +178,20 @@ body {
 .download-button.primary:active {
     background-color: #333;
 }
-
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #61615f;
+    color: #1e1c1c;
+}
+.download-button.tertiary:hover {
+    background-color: #c6c4c4;
+    border-color: #232121;
+    color: #2a2727;
+}
+.download-button.tertiary:active {
+    background-color: #111;
+    color: #fff;
+}
 /* ========================================
    PAGE LABEL
    Fixed badge at top-center indicating
